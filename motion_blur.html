@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>修の修</title>
+<link rel="icon" href="data:," />
+<link rel="shortcut icon" href="data:," />
+<script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+
+<!-- TeX表示用: MathJax -->
+<script>
+   window.MathJax = {
+     tex: {
+       inlineMath: [['$', '$'], ['\\(', '\\)']],
+       displayMath: [['$$', '$$'], ['\\[', '\\]']]
+     },
+     svg: {
+       fontCache: 'global'
+     }
+   };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<style>
+  .twitter-tweet,
+  .twitter-tweet-rendered {
+    max-width: 360px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+</style>
+<style>
+   :root {
+     --bg: #ffffff;
+     --text: #1f2328;
+     --muted: #667085;
+     --line: #e5e7eb;
+     --code-bg: #f6f8fa;
+     --link: #0969da;
+     --max: 760px;
+     --radius: 12px;
+   }
+   * {
+     box-sizing: border-box;
+   }
+   html {
+     scroll-behavior: smooth;
+   }
+   body {
+     margin: 0;
+     background: var(--bg);
+     color: var(--text);
+     font-family:
+       -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+       "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+       "Yu Gothic", "Noto Sans JP", sans-serif;
+     line-height: 1.9;
+     font-size: 16px;
+     -webkit-font-smoothing: antialiased;
+     text-rendering: optimizeLegibility;
+   }
+   a {
+     color: var(--link);
+     text-decoration: none;
+   }
+   a:hover {
+     text-decoration: underline;
+   }
+   .page {
+     width: 100%;
+     padding: 48px 20px 80px;
+   }
+   .container {
+     max-width: var(--max);
+     margin: 0 auto;
+   }
+   header {
+     margin-bottom: 48px;
+     padding-bottom: 24px;
+     border-bottom: 1px solid var(--line);
+   }
+   .site-title {
+     margin: 0 0 12px;
+     font-size: 14px;
+     font-weight: 600;
+     color: var(--muted);
+     letter-spacing: 0.04em;
+     text-transform: uppercase;
+   }
+   h1 {
+     margin: 0 0 12px;
+     font-size: clamp(2rem, 4vw, 2.8rem);
+     line-height: 1.25;
+     letter-spacing: -0.02em;
+   }
+   .meta {
+     color: var(--muted);
+     font-size: 0.95rem;
+   }
+   article {
+     font-size: 1.02rem;
+   }
+   h2, h3, h4 {
+     line-height: 1.4;
+     margin-top: 2.6em;
+     margin-bottom: 0.8em;
+     letter-spacing: -0.01em;
+   }
+   h2 {
+     font-size: 1.7rem;
+     padding-bottom: 0.35em;
+     border-bottom: 1px solid var(--line);
+   }
+   h3 {
+     font-size: 1.28rem;
+   }
+   p {
+     margin: 1.1em 0;
+   }
+   ul, ol {
+     padding-left: 1.4em;
+     margin: 1em 0;
+   }
+   li + li {
+     margin-top: 0.4em;
+   }
+   blockquote {
+     margin: 1.5em 0;
+     padding: 0.2em 1em;
+     border-left: 4px solid #d0d7de;
+     color: #4b5563;
+     background: #fafafa;
+     border-radius: 0 8px 8px 0;
+   }
+   hr {
+     border: 0;
+     border-top: 1px solid var(--line);
+     margin: 3em 0;
+   }
+   code {
+     font-family:
+       ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+       "Liberation Mono", "Courier New", monospace;
+     background: var(--code-bg);
+     padding: 0.18em 0.42em;
+     border-radius: 6px;
+     font-size: 0.92em;
+   }
+   pre {
+     background: var(--code-bg);
+     border: 1px solid var(--line);
+     border-radius: var(--radius);
+     padding: 16px 18px;
+     overflow-x: auto;
+     line-height: 1.7;
+     font-size: 0.94rem;
+   }
+   pre code {
+     background: transparent;
+     padding: 0;
+     border-radius: 0;
+     font-size: inherit;
+   }
+   figure {
+     margin: 2em 0;
+   }
+   img {
+     display: block;
+     width: 100%;
+     height: auto;
+     border-radius: 0px;
+     border: 1px solid var(--line);
+     background: #f8fafc;
+   }
+   figcaption {
+     margin-top: 0.75em;
+     font-size: 0.92rem;
+     color: var(--muted);
+     text-align: center;
+   }
+   .note {
+     padding: 14px 16px;
+     border: 1px solid var(--line);
+     border-radius: 12px;
+     background: #fcfcfd;
+     color: #344054;
+   }
+   .math-block {
+     overflow-x: auto;
+     padding: 0.3em 0;
+   }
+   footer {
+     margin-top: 64px;
+     padding-top: 24px;
+     border-top: 1px solid var(--line);
+     color: var(--muted);
+     font-size: 0.92rem;
+   }
+   @media (max-width: 640px) {
+     .page {
+       padding: 32px 16px 56px;
+     }
+     article {
+       font-size: 1rem;
+     }
+     pre {
+       padding: 14px;
+     }
+   }
+</style>
+
+
+</head>
+<body>
+<div class="page">
+<div class="container">
+<header>
+<p class="site-title">修の修</p>
+<h1>『エヴァンゲリオン放送30周年記念特別興行』短編アニメーションにおけるブレ表現の元データ解析</h1>
+<p class="meta">2026-XX-XX · ujima</p>
+</header>
+<article>
+<p>
+
+</p>
+<p>
+<a href="https://x.com/khara_inc2" target="_blank" rel="noopener noreferrer">(株)カラー 2号機さん</a>の
+<a href="https://x.com/khara_inc2/status/2034193091825922222" target="_blank" rel="noopener noreferrer">投稿(下記参照)</a>
+において、『エヴァンゲリオン放送30周年記念特別興行』短編アニメーション(以下、特別興行)
+<a href="https://www.youtube.com/watch?v=t6ju8O7a89g" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=t6ju8O7a89g</a>では、
+当時の映像を素材として、当時のセル画の空気感を再現する工夫がなされていたことが公表されました。
+また、 <a href="https://x.com/Pen_Daco" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">ペンだこさん</a>の
+<a href="https://x.com/Pen_Daco/status/2034197172301017097" target="_blank" rel="noopener noreferrer">投稿(下記参照)</a>
+から、新世紀エヴァンゲリオンTV版、及び旧劇場版の長い止メのカットからフィルム由来のブレを抽出し、
+それを特別興行に適用したことが推察できます。
+この記事ではこれらのツイートから明らかになった、特別興行におけるブレが新世紀エヴァンゲリオンのどのカット、さらにどの部分から抽出されているのかを解析していきます。
+</p>
+
+<blockquote class="twitter-tweet" data-lang="ja" data-theme="light" data-width="360">
+  <a href="https://twitter.com/khara_inc2/status/2034193091825922222"></a>
+</blockquote>
+
+<blockquote class="twitter-tweet" data-lang="ja" data-theme="light" data-width="360">
+  <a href="https://twitter.com/Pen_Daco/status/2034197172301017097"></a>
+</blockquote>
+
+
+
+<p>
+まずは特別興行の動画全体を通して、どれくらい動いているかを見ていきます。
+グレースケール化してちょっとだけガウシアンフィルタかけて、各フレームごとに前フレームとの差分をとってみます。
+まずここから分かったのは、先のツイートにあるように旧映像っぽく見せたいカットでのみブレをいれていそうだぞ、ということです。
+Fig. 1をみてわかるように、例えば冒頭のステージの止メのカット(二人のアスカがせり出してくるまで)は完全に止まっています。横軸は時間(秒)。13s-21sくらいまでのところです。
+</p>
+<p>
+<figure>
+<img src="images/motion_blur/plot_ep27_nomotion.png" alt="Fig. 1.">
+<figcaption>Fig. 1.</figcaption>
+</figure>
+</p>
+
+<p>
+一方でFig. 2に示すようにアスカ一人でプラットフォームで待っているカット(600s-604sくらいまで)は止メのカットのはずなのに微妙に動きがあることがわかります。
+さらにこの付近にはカットの中でのキャラや物体の動き(もともとのアニメーションの演技)の他にもそれらしい動きがたくさんあります。
+</p>
+<p>
+<figure>
+<img src="images/motion_blur/plot_ep27_motion.png" alt="Fig. 2.">
+<figcaption>Fig. 2.</figcaption>
+</figure>
+</p>
+
+
+<p>
+ここから分かった、止メあるいはそれに準ずるカットで、あえてブレを加えていそうなカットは下記Fig. 3。
+他にもあるかもしれませんので、お気づきの方はお知らせください。
+止メあるいはそれに準ずるカット、に限定したのはもともとのアニメーションの演技としての動きが入っているものはブレの抽出のための映像/画像解析が非常にやりにくいからです。
+例えばわかりやすいのはちびアスカが走っているカット。こちらはおそらくあえてブレを加えていそうなカットなのですが、画面全体にもともとのアニメーションとしての動きが入っており、
+この動きとブレの動きの切り分けが難しいため候補から除外しています。
+一方で、画面の一部にもともとのアニメーションとしての動きが入っているカットについては、動いていないキャラの一部分や背景部分を使ってブレを抽出することができます。
+また、ちびアスカの2カットにあるようなかなりゆっくりとズームイン、ズームアウトするようなカットについては画面の中央部分を解析対象にしています。
+</p>
+<p>
+<figure>
+<img src="images/motion_blur/ep27_cut_000.png" alt="Fig. 3.">
+<img src="images/motion_blur/ep27_cut_001.png" alt="Fig. 3.">
+<img src="images/motion_blur/ep27_cut_002.png" alt="Fig. 3.">
+<figcaption>Fig. 3. #画像はすべて特別興行よりそれぞれの該当箇所から引用。下記同じ。</figcaption>
+</figure>
+</p>
+
+<p>
+次に、先のペンだこさんの投稿画像に合ったヒントから、ブレを抽出したであろう旧映像の3カットをもってきます。
+それぞれ長い時間の止メカットとして記憶に残っている方も多いかと思いますが、一応補足しておくと
+左上：初号機握りつぶしのカットは24話、
+右上：エレベータのカットは22話、
+下：うつむきシンジと立ちミサトは劇場版DEATH(TRUE)2、
+からです。
+
+うつむきシンジと立ちミサト、これはTVシリーズ4話にもあったのでは？
+と思う方もいらっしゃると思いますがこのヒントに貼られているのは劇場版DEATH(TRUE)2用の新作カットです。(私は今回調べて初めて気が付きました)
+これはこのヒントの画像が上2枚が4:3、下が16:9になっていることからもわかります。
+
+初号機握りつぶしとエレベータ、これは4:3なのでおそらくTVシリーズからだと思いますが、劇場版DEATH(TRUE)2は総集編パートがあり
+そこにも含まれているためこれらも解析対象とします。
+ということで元データとなるブレを抽出したであろう旧映像カットは下記Fig. 4。
+</p>
+<p>
+<figure>
+<img src="images/motion_blur/source_cut.png" alt="Fig. 4.">
+<figcaption>Fig. 4. #画像はすべて新世紀エヴァンゲリオンTVシリーズ、及び劇場版DEATH(TRUE)2よりそれぞれの該当箇所から引用。下記同じ。</figcaption>
+</figure>
+</p>
+
+
+<p>
+これらのカットからブレについての情報を抽出していきます。
+まずは各カットのフレーム間でどれくらいの回転、並進が起きているかを確認しました。
+ここで回転成分が大きいと解析が面倒だなあと思っていたんですが、高々0.2degほどであることが確認できました。
+ということで回転は一旦無視できることにしてしまって並進だけに注目します。
+並進成分$dx, dy$に分割できますが、軽く確認したところ特別映像のブレと旧映像のブレは動いた量の絶対値が結構違いそうな印象なので、
+この$dx, dy$を極座標$\theta, r$に変換します。つまり移動方向と移動量です。
+</p>
+
+<p>
+ここで移動方向$\theta$の$-\pi$rad(-180度)付近のデータは処理方式によっては$\pi$rad(+180度)に簡単にスイッチしてしまいノイズになりかねないので、
+-3rad以下の値は纏めて$\pi$radにまとめています。
+</p>
+
+<p>
+こうしてできたデータがたとえばこんな感じFig. 5。上がブレの移動方向、下が移動量。
+ここでは前述のEP27_000 ちびアスカ手元とぬいぐるみ正面 8m27s - 8m31s のデータです。
+</p>
+
+<p>
+<figure>
+<img src="images/motion_blur/motion_example.png" alt="Fig. 5.">
+<figcaption>Fig. 5. </figcaption>
+</figure>
+</p>
+
+
+<p>
+いよいよ特別興行のデータと旧映像のデータを比較して、ぴったり合いそうなところを見つける作業。
+特別興行の映像におけるブレが旧映像のどこから来たかを探していきます。
+どの組み合わせにおいても、特別興行のカットの長さ&lt;旧映像のカットの長さとなっているので、
+特別興行の各カットの長さで移動窓を切り、旧映像のデータのそれぞれの位置で相関を取って探していきます。
+1つのカットから移動方向と移動量2つのデータが得られ、それぞれの相関を見ていって、移動方向と移動量同じところでピークが立てばそこが
+探していた元データ、という判定を行いました。
+</p>
+
+<p>
+ということで上記の判定基準に則って元データの所在が分かった特別興行の各カットをまとめたものが下記 Fig. 6 です。
+元データと判定されたものはすべて、22話cut78 エレベータ からのみとなりました。 
+ヒントにあった初号機握りつぶしのカット、及び
+うつむきシンジと立ちミサトのカットからは元データとなった候補は挙がってきませんでした。
+</p>
+<p>
+<figure>
+<img src="images/motion_blur/results.png" alt="Fig. 6.">
+<figcaption>Fig. 6. </figcaption>
+</figure>
+</p>
+
+
+<p>
+これらの中でもこれはバッチリ一致しているなあ(見た目)となったのが
+EP27_021 アスカとジンジのプラットホーム(特別興行10m49s - 10m52s)です。
+ここのブレの元データとなっている旧映像は22話cut78 エレベータ のカットにおける 11.7s - 15.0s であることがわかりました。
+この結果をFig. 7に示します。
+</p>
+<p>
+<figure>
+<img src="images/motion_blur/ep27_021_result.png" alt="Fig. 7.">
+<figcaption>Fig. 7. </figcaption>
+</figure>
+</p>
+
+
+<p>
+また、該当カットを特定した時間部分で切り出し、拡大して比較したものがこちらFig. 8 です。
+見やすいように通常24fpsのところ3fps、つまり1/8倍速での再生となっています。小さな誤差はあるものの概ね同調して動いていることがわかります。
+</p>
+
+<p>
+<figure>
+<img src="images/motion_blur/side_by_side_rect.png" alt="Fig. 8.">
+<img src="images/motion_blur/side_by_side_cropped.gif" alt="Fig. 8."
+style="display:block; width:400px; max-width:100%; height:auto; margin:0 auto;">
+<figcaption>Fig. 8. </figcaption>
+</figure>
+</p>
+
+
+
+<p>
+ということで最初に述べた、『エヴァンゲリオン放送30周年記念特別興行』短編アニメーションにおけるブレ表現の元データ解析ができました。
+すべてのカットに対して元データが分かったわけではないものの、いくつかのカットでブレの元データとなったカットとその抽出部分がわかりました。
+一方でヒントに上がっていた旧映像の3カットのうち1カットしか候補として上がってこなかったのはなにか間違っている可能性もあり、そもそもブレの抽出方法が違ったのかも？という気もします。
+</p>
+
+<p>
+最後に改善提案を。コマ数が少ないものほど雑な一致でもピックアップされやすいのでサンプル数に応じた処理ができると良いかもしれません。
+また、そもそも移動量が小さいときにはどの方向に動いたかはさほど重要ではないはずなので、
+移動量を重みとして移動方向にかけて1次元の変数にしてあげるとかすると結果が変わったかもしれません。
+あとは解像度でしょうか。先の投稿やその関連するものを見るとマスターデータを使っているようですので、
+もっと高解像度のデータで上記処理を行うと違った結果になるかもです。
+</p>
+
+<p>
+とはいえここまでやってみて、ランダムな時系列データを持ってきてそれなりに上手くはまったところをたまたま抜き出してるだけ、という可能性も排除できません。
+移動方向と移動量同じところで相関のピークが立っているのを判定基準にしているのでまあまあ厳しい条件だとおもいますが。
+このあたりは統計検定など使うとより良くなるかもと思っています。
+</p>
+
+<p>
+もっといい方法があるぜ！とかのご意見や、実は内部ではこうやっていてですね...といった極秘情報などお待ちしております。
+</p>
+
+
+</article>
+<footer>
+       © 2026 ujima
+</footer>
+</div>
+</div>
+</body>
+</html>
